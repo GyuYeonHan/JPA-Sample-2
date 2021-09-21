@@ -92,6 +92,7 @@ public class InitDb {
         private Delivery createDelivery(Member member) {
             Delivery delivery = new Delivery();
             delivery.setAddress(member.getAddress());
+            delivery.setStatus(DeliveryStatus.READY);
             return delivery;
         }
     }
